@@ -1,0 +1,8 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<circle cx="50" cy="50" fill="#FFFFFF" r="50" stroke="#797979"  stroke-width="1"  />
+	<line x1="50" x2="50" y1="0" y2="100" fill="#660F0F" stroke="#660F0F" stroke-width="2"/>
+	<line x1="0" x2="100" y1="50" y2="50" fill="#660F0F" stroke="#660F0F" stroke-width="2"/>
+	<circle cx="50" cy="50" fill="#FFFFFF" r="35"  stroke="#797979"  stroke-width="1" />
+	<text x="40" y="60" font-size="40" fille="#014667">5</text>
+	<text x="15" y="120" font-size="30" fille="#014667">Status</text>
+</svg>

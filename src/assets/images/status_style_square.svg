@@ -1,0 +1,8 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<rect width="75" height="75" fill="#FFFFFF" rx="5" ry="5" stroke="#797979"  stroke-width="1"  />
+	<line x1="37" x2="37" y1="0" y2="75" fill="#660F0F" stroke="#660F0F" stroke-width="2"/>
+	<line x1="0" x2="75" y1="37" y2="37" fill="#660F0F" stroke="#660F0F" stroke-width="2"/>
+	<rect x="10" y="10" width="50" height="50" fill="#FFFFFF" rx="5" ry="5" stroke="#797979"  stroke-width="1" />
+	<text x="25" y="50" font-size="40" fille="#014667">5</text>
+	<text x="0" y="100" font-size="30" fille="#014667">Status</text>
+</svg>
