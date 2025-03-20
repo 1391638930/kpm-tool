@@ -1,0 +1,449 @@
+<template>
+  <a-spin :loading="loading" style="width: 100%">
+    <a-card
+      class="general-card"
+      :header-style="{ paddingBottom: '32px', paddingTop: '32px' }"
+    >
+      <template #title>
+        {{ $t('verificationDataAnalysis.funcDimension') }}
+      </template>
+      <template #extra>
+        <a-space direction="horizontal" size="medium">
+          <a-form-item field="name" label="Cluster">
+            <a-select
+              v-model="clusterValue"
+              :style="{ width: '220px' }"
+              placeholder="Cluster Type"
+              @change="clusterChange"
+            >
+              <a-option
+                v-for="item of clusterArray"
+                :key="item.value"
+                :value="item.value"
+                :label="item.label"
+              />
+            </a-select>
+          </a-form-item>
+          <a-form-item field="week" label="Week">
+            <a-select
+              v-model="weekValue"
+              :style="{ width: '220px' }"
+              placeholder="Cluster Type"
+              @change="weekChange"
+            >
+              <a-option
+                v-for="item of weekArray"
+                :key="item.value"
+                :value="item.value"
+                :label="item.label"
+              />
+            </a-select>
+          </a-form-item>
+        </a-space>
+      </template>
+      <Chart style="width: 100%; height: 447px" :option="chartOption" />
+    </a-card>
+  </a-spin>
+</template>
+
+<script lang="ts" setup>
+  import { ref } from 'vue';
+  import useLoading from '@/hooks/loading';
+  import { queryVerifyByFunc, ContentVerifyRecord } from '@/api/visualization';
+  import { ToolTipFormatterParams } from '@/types/echarts';
+  import useChartOption from '@/hooks/chart-option';
+
+  // const chartTheme = ref('customed');
+  // echarts.init(chartRef, 'customed');
+
+  const tooltipItemsHtmlString = (items: ToolTipFormatterParams[]) => {
+    return items
+      .map(
+        (el) => `<div class="content-panel">
+        <p>
+          <span style="background-color: ${el.color}" class="tooltip-item-icon"></span>
+
+          <span>${el.seriesName}</span>
+        </p>
+        <span class="tooltip-value">
+        ${el.value}
+        </span>
+      </div>`
+      )
+      .join('');
+  };
+
+  const { loading, setLoading } = useLoading(true);
+  const clusterValue = ref('CL39');
+  const clusterArray = [
+    {
+      label: 'CL39',
+      value: 'CL39',
+    },
+    {
+      label: 'CL3A',
+      value: 'CL3A',
+    },
+
+    {
+      label: 'CL35',
+      value: 'CL35',
+    },
+    {
+      label: 'CL35.2',
+      value: 'CL35.2',
+    },
+    {
+      label: 'CL37',
+      value: 'CL37',
+    },
+  ];
+
+  const weekValue = ref('CW13');
+  const PrefixInteger = (num: number, length: number) => {
+    return (Array(length).join('0') + num).slice(-length);
+  };
+  const weekArray: Array<any> = [];
+  const genWeekArray = () => {
+    for (let num = 1; num <= 52; num += 1) {
+      const weekNum = PrefixInteger(num, 2);
+      weekArray.push({
+        label: `CW${weekNum}`,
+        value: `CW${weekNum}`,
+      });
+    }
+  };
+  genWeekArray();
+
+  const xAxis = ref<string[]>([]);
+  const vokChartsData = ref<number[]>([]);
+  const vnokChartsData = ref<number[]>([]);
+  const vokRateChartsData = ref<number[]>([]);
+  // const imgChartsData = ref<number[]>([]);
+  // const videoChartsData = ref<number[]>([]);
+
+  const { chartOption } = useChartOption((isDark) => {
+    return {
+      title: {
+        text: `${clusterValue.value} Regression Status By Func`,
+        left: 'center',
+        fontWeight: 'bolder',
+      },
+      grid: {
+        left: '40',
+        right: '40',
+        top: '50',
+        bottom: '35',
+        containLabel: true,
+      },
+      legend: {
+        bottom: 0,
+        icon: 'circle',
+        textStyle: {
+          color: '#4E5969',
+        },
+      },
+      toolbox: {
+        show: true,
+        feature: {
+          saveAsImage: { type: 'png' },
+        },
+      },
+
+      xAxis: {
+        type: 'category',
+        data: xAxis.value,
+        boundaryGap: true,
+        axisLine: {
+          lineStyle: {
+            color: isDark ? '#3f3f3f' : '#A9AEB8',
+          },
+        },
+        axisTick: {
+          show: true,
+          alignWithLabel: true,
+          // lineStyle: {
+          //   color: '#86909C',
+          // },
+          interval(idx: number) {
+            if (idx === 0) return false;
+            if (idx === xAxis.value.length - 1) return false;
+            return true;
+          },
+        },
+        axisLabel: {
+          // color: '#86909C',
+          // formatter(value: number, idx: number) {
+          //   if (idx === 0) return '';
+          //   if (idx === xAxis.value.length - 1) return '';
+          //   return `${value}`;
+          // },
+          color: '#000000',
+          interval: 0,
+          rotate: 40,
+        },
+      },
+      yAxis: [
+        {
+          type: 'value',
+          splitLine: {
+            lineStyle: {
+              // color: isDark ? '#3F3F3F' : '#E5E6EB',
+            },
+            show: false,
+          },
+          axisLine: {
+            show: true,
+          },
+          axisLabel: {
+            color: '#000000',
+            formatter: '{value}%',
+          },
+        },
+        {
+          type: 'value',
+          name: 'VOKRate',
+          min: 0,
+          max: 100,
+          interval: 10,
+          yAxisIndex: 1,
+          splitLine: {
+            lineStyle: {
+              // color: isDark ? '#3F3F3F' : '#E5E6EB',
+            },
+            show: true,
+          },
+          axisLine: {
+            show: true,
+          },
+          axisLabel: {
+            color: '#000000',
+            formatter: '{value}%',
+          },
+        },
+      ],
+      // tooltip: {
+      //   show: true,
+      //   trigger: 'axis',
+      //   formatter(params) {
+      //     const [firstElement] = params as ToolTipFormatterParams[];
+      //     return `<div>
+      //       <p class="tooltip-title">${firstElement.axisValueLabel}</p>
+      //       ${tooltipItemsHtmlString(params as ToolTipFormatterParams[])}
+      //     </div>`;
+      //   },
+      //   className: 'echarts-tooltip-diy',
+      // },
+      // 提示框取默认值，即鼠标移动到柱状图会显示内容
+      tooltip: {
+        trigger: 'axis', // 触发类型；轴触发，axis则鼠标hover到一条柱状图显示全部数据，item则鼠标hover到折线点显示相应数据，
+        axisPointer: {
+          // 坐标轴指示器，坐标轴触发有效，
+          type: 'line', // 默认为line，line直线，cross十字准星，shadow阴影
+          crossStyle: {
+            color: '#fff',
+          },
+        },
+        formatter(params) {
+          const [firstElement, second, third] =
+            params as ToolTipFormatterParams[];
+
+          const barContentStr = `<div>
+            <p class="tooltip-title">${firstElement.axisValueLabel}</p>
+            ${tooltipItemsHtmlString([
+              firstElement,
+              second,
+            ] as ToolTipFormatterParams[])}
+          </div>`;
+
+          const vokRateStr = `<div class="content-panel">
+          <p>
+          <span style="background-color: ${third.color}" class="tooltip-item-icon"></span>
+
+          <span>${third.seriesName}</span>
+          </p>
+          <span class="tooltip-value">
+          ${third.value}%
+          </span>
+          </div>`;
+
+          return barContentStr + vokRateStr;
+        },
+        className: 'echarts-tooltip-diy',
+      },
+      series: [
+        {
+          name: 'VOK',
+          data: vokChartsData.value,
+          stack: 'verify',
+          type: 'bar',
+          smooth: true,
+          showSymbol: false,
+          // color: isDark ? '#3D72F6' : '#246EFF',
+          symbol: 'circle',
+          symbolSize: 10,
+          color: '#4A7D31',
+          // label: {
+          //   show: true,
+          //   position: 'top',
+          //   textStyle: {
+          //     fontSize: 12,
+          //   },
+          // },
+          emphasis: {
+            focus: 'series',
+            itemStyle: {
+              borderWidth: 2,
+              borderColor: '#E0E3FF',
+            },
+          },
+        },
+        {
+          name: 'VNOK',
+          stack: 'verify',
+          data: vnokChartsData.value,
+          type: 'bar',
+          smooth: true,
+          color: '#962E35',
+          // showSymbol: true,
+          // color: isDark ? '#A079DC' : '#00B2FF',
+          // symbol: 'circle',
+          symbolSize: 6,
+          // label: {
+          //   show: true,
+          //   position: 'bottom',
+          //   textStyle: {
+          //     fontSize: 12,
+          //   },
+          // },
+          emphasis: {
+            focus: 'series',
+            itemStyle: {
+              borderWidth: 2,
+              borderColor: '#E2F2FF',
+            },
+          },
+        },
+        {
+          name: 'VOKRate',
+          data: vokRateChartsData.value,
+          type: 'line',
+          yAxisIndex: 1,
+          // smooth: true,
+          // showSymbol: false,
+          // color: isDark ? '#6CAAF5' : '#81E2FF',
+          // symbol: 'circle',
+          symbolSize: 7,
+          emphasis: {
+            focus: 'series',
+            itemStyle: {
+              borderWidth: 1,
+              borderColor: '#D9F6FF',
+            },
+          },
+          label: {
+            show: true,
+            position: 'top',
+            formatter: '{c}%',
+          },
+          lineStyle: {
+            opacity: 0,
+          },
+          markLine: {
+            // name: '警戒线',
+            // symbol: 'none',
+            silent: false,
+            label: {
+              position: 'start',
+              formatter: 'vok pass',
+            },
+            data: [
+              {
+                type: 'average',
+                silent: false,
+                lineStyle: {
+                  type: 'solid',
+                  color: 'red',
+                },
+                yAxis: 80,
+              },
+            ],
+          },
+        },
+      ],
+      // dataZoom: [
+      //   {
+      //     bottom: 40,
+      //     type: 'slider',
+      //     left: 40,
+      //     right: 14,
+      //     height: 14,
+      //     borderColor: 'transparent',
+      //     handleIcon:
+      //       'image://http://p3-armor.byteimg.com/tos-cn-i-49unhts6dw/1ee5a8c6142b2bcf47d2a9f084096447.svg~tplv-49unhts6dw-image.image',
+      //     handleSize: '20',
+      //     handleStyle: {
+      //       shadowColor: 'rgba(0, 0, 0, 0.2)',
+      //       shadowBlur: 4,
+      //     },
+      //     brushSelect: false,
+      //     backgroundColor: isDark ? '#313132' : '#F2F3F5',
+      //   },
+      //   {
+      //     type: 'inside',
+      //     start: 0,
+      //     end: 100,
+      //     zoomOnMouseWheel: false,
+      //   },
+      // ],
+    };
+  });
+  const fetchData = async () => {
+    setLoading(true);
+    try {
+      const { data: chartData } = await queryVerifyByFunc(
+        clusterValue.value,
+        weekValue.value
+      );
+      // console.log('supplier', chartData);
+      if (chartData.length === 0) {
+        xAxis.value = [];
+        vokChartsData.value = [];
+        vnokChartsData.value = [];
+        vokRateChartsData.value = [];
+        // this.chart.clear()
+      } else {
+        xAxis.value = chartData[0].x;
+        chartData.forEach((el: ContentVerifyRecord) => {
+          if (el.name === 'VOK') {
+            vokChartsData.value = el.y;
+          } else if (el.name === 'VNOK') {
+            vnokChartsData.value = el.y;
+          } else if (el.name === 'VOK Rate') {
+            vokRateChartsData.value = el.y.map((val) =>
+              parseFloat((val * 100).toFixed(2))
+            );
+          }
+        });
+      }
+    } catch (err) {
+      // you can report use errorHandler or other
+    } finally {
+      setLoading(false);
+    }
+  };
+  const clusterChange = () => {
+    fetchData();
+  };
+  const weekChange = () => {
+    fetchData();
+  };
+  fetchData();
+</script>
+
+<style scoped lang="less">
+  .chart-box {
+    width: 100%;
+    height: 230px;
+  }
+</style>
