@@ -1,0 +1,15 @@
+export default {
+  'menu.workspace.FollowTicket': '卡片列表',
+  'followTicket.searchInput.placeholder': '关注票搜索',
+  // 'followTicket.statistic.enable': '已启用',
+  // 'followTicket.statistic.disable': '未启用',
+  'followTicket.content.delete': '删除',
+  'followTicket.content.inspection': '质检',
+  'followTicket.content.action': '点击创建质检内容队列',
+  'followTicket.service.open': '开通服务',
+  'followTicket.service.cancel': '取消服务',
+  'followTicket.service.renew': '续约服务',
+  'followTicket.service.tag': '已开通',
+  'followTicket.service.expiresTag': '已过期',
+  'followTicket.preset.tag': '已启用',
+};
