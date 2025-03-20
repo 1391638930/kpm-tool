@@ -1,0 +1,1463 @@
+{
+    "default": {
+        "menu": {
+            "HELP": {
+                "child": {
+                    "Configuration wizard": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "HELP"
+                        ]
+                    },
+                    "Tool tips": {
+                        "child": {
+                            "Basic information": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "HELP",
+                                    "Tool tips"
+                                ]
+                            },
+                            "Expert information": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "HELP",
+                                    "Tool tips"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "HELP"
+                        ]
+                    }
+                },
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            },
+            "MEDIA": {
+                "child": {
+                    "Source": {
+                        "child": {
+                            "Search": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "MEDIA",
+                                    "Source"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "MEDIA"
+                        ]
+                    }
+                },
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            },
+            "MESSAGES": {
+                "child": {
+                    "Text message": {
+                        "child": {
+                            "Deleted": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "MESSAGES",
+                                    "Text message"
+                                ]
+                            },
+                            "Drafts": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "MESSAGES",
+                                    "Text message"
+                                ]
+                            },
+                            "Inbox": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "MESSAGES",
+                                    "Text message"
+                                ]
+                            },
+                            "New text message": {
+                                "child": {
+                                    "New message": {
+                                        "child": {
+                                            "Add": {
+                                                "child": {
+                                                    "Search": {
+                                                        "child": {},
+                                                        "direction": "horizontal",
+                                                        "level": 6,
+                                                        "parent": [
+                                                            "MESSAGES",
+                                                            "Text message",
+                                                            "New text message",
+                                                            "New message",
+                                                            "Add"
+                                                        ]
+                                                    }
+                                                },
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "MESSAGES",
+                                                    "Text message",
+                                                    "New text message",
+                                                    "New message"
+                                                ]
+                                            },
+                                            "Delete": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "MESSAGES",
+                                                    "Text message",
+                                                    "New text message",
+                                                    "New message"
+                                                ]
+                                            },
+                                            "Read out": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "MESSAGES",
+                                                    "Text message",
+                                                    "New text message",
+                                                    "New message"
+                                                ]
+                                            },
+                                            "Send": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "MESSAGES",
+                                                    "Text message",
+                                                    "New text message",
+                                                    "New message"
+                                                ]
+                                            }
+                                        },
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "MESSAGES",
+                                            "Text message",
+                                            "New text message"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "MESSAGES",
+                                    "Text message"
+                                ]
+                            },
+                            "Outbox": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "MESSAGES",
+                                    "Text message"
+                                ]
+                            },
+                            "Sent": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "MESSAGES",
+                                    "Text message"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "MESSAGES"
+                        ]
+                    }
+                },
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            },
+            "Navigation": {
+                "child": {
+                    "Search": {
+                        "child": {
+                            "Chinese restaurant": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Search"
+                                ]
+                            },
+                            "Convenience store": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Search"
+                                ]
+                            },
+                            "Fast food": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Search"
+                                ]
+                            },
+                            "Gas station": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Search"
+                                ]
+                            },
+                            "Parking": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Search"
+                                ]
+                            },
+                            "bank": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Search"
+                                ]
+                            },
+                            "hotel": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Search"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "Navigation"
+                        ]
+                    },
+                    "Select destination": {
+                        "child": {
+                            "Favorites": {
+                                "child": {
+                                    "Search": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "Navigation",
+                                            "Select destination",
+                                            "Favorites"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Select destination"
+                                ]
+                            },
+                            "Last destinations": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Select destination"
+                                ]
+                            },
+                            "POI call": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Select destination"
+                                ]
+                            },
+                            "Settings": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Select destination"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "Navigation"
+                        ]
+                    },
+                    "Settings": {
+                        "child": {
+                            "Map settings": {
+                                "child": {
+                                    "Map content": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "Navigation",
+                                            "Settings",
+                                            "Map settings"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Settings"
+                                ]
+                            },
+                            "Presentation mode": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Settings"
+                                ]
+                            },
+                            "Route criteria": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Settings"
+                                ]
+                            },
+                            "Route information": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Settings"
+                                ]
+                            },
+                            "Voice guidance": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Navigation",
+                                    "Settings"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "Navigation"
+                        ]
+                    }
+                },
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            },
+            "ONLINE MEDIA": {
+                "child": {},
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            },
+            "PHONE": {
+                "child": {
+                    "Call list": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "PHONE"
+                        ]
+                    },
+                    "Contacts": {
+                        "child": {
+                            "Settings": {
+                                "child": {
+                                    "Download contacts": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "PHONE",
+                                            "Contacts",
+                                            "Settings"
+                                        ]
+                                    },
+                                    "Export contacts": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "PHONE",
+                                            "Contacts",
+                                            "Settings"
+                                        ]
+                                    },
+                                    "Import contacts": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "PHONE",
+                                            "Contacts",
+                                            "Settings"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "Contacts"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "PHONE"
+                        ]
+                    },
+                    "Dial phone number": {
+                        "child": {
+                            "Dial": {
+                                "child": {
+                                    "End call": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "PHONE",
+                                            "Dial phone number",
+                                            "Dial"
+                                        ]
+                                    },
+                                    "Hold": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "PHONE",
+                                            "Dial phone number",
+                                            "Dial"
+                                        ]
+                                    },
+                                    "More": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "PHONE",
+                                            "Dial phone number",
+                                            "Dial"
+                                        ]
+                                    },
+                                    "Mute": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "PHONE",
+                                            "Dial phone number",
+                                            "Dial"
+                                        ]
+                                    },
+                                    "Numbers": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "PHONE",
+                                            "Dial phone number",
+                                            "Dial"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "Dial phone number"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "PHONE"
+                        ]
+                    },
+                    "Favorites": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "PHONE"
+                        ]
+                    },
+                    "SOS": {
+                        "child": {
+                            "110 Police": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "SOS"
+                                ]
+                            },
+                            "112 Emergency info": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "SOS"
+                                ]
+                            },
+                            "119 Fire Alarm": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "SOS"
+                                ]
+                            },
+                            "120 Emergency Center": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "SOS"
+                                ]
+                            },
+                            "122 Traffic Accident Report": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "SOS"
+                                ]
+                            },
+                            "911 Emergency info": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "SOS"
+                                ]
+                            },
+                            "Dial phone number": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "SOS"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "PHONE"
+                        ]
+                    },
+                    "Search": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "PHONE"
+                        ]
+                    },
+                    "Voicemail": {
+                        "child": {
+                            "End call": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "Voicemail"
+                                ]
+                            },
+                            "Numbers": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "PHONE",
+                                    "Voicemail"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "PHONE"
+                        ]
+                    }
+                },
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            },
+            "PHONE APPS": {
+                "child": {},
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            },
+            "RADIO": {
+                "child": {
+                    "Source": {
+                        "child": {
+                            "AM": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "RADIO",
+                                    "Source"
+                                ]
+                            },
+                            "FM": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "RADIO",
+                                    "Source"
+                                ]
+                            },
+                            "Favorites": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "RADIO",
+                                    "Source"
+                                ]
+                            },
+                            "Last stations": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "RADIO",
+                                    "Source"
+                                ]
+                            },
+                            "Search": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "RADIO",
+                                    "Source"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "RADIO"
+                        ]
+                    }
+                },
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            },
+            "SETTINGS": {
+                "child": {
+                    "Announcements & tones": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Audi connect settings": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "AudioDump": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Connected devices": {
+                        "child": {
+                            "Audio player": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Connected devices"
+                                ]
+                            },
+                            "Headset": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Connected devices"
+                                ]
+                            },
+                            "Smartphone interface": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Connected devices"
+                                ]
+                            },
+                            "Telephone 1": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Connected devices"
+                                ]
+                            },
+                            "Telephone 2": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Connected devices"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Connection settings": {
+                        "child": {
+                            "Bluetooth": {
+                                "child": {
+                                    "Bluetooth name": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "SETTINGS",
+                                            "Connection settings",
+                                            "Bluetooth"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Connection settings"
+                                ]
+                            },
+                            "Fernbedientes Parken": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Connection settings"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Contacts": {
+                        "child": {
+                            "Download contacts": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Contacts"
+                                ]
+                            },
+                            "Export contacts": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Contacts"
+                                ]
+                            },
+                            "Import contacts": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Contacts"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Display & Brightness": {
+                        "child": {
+                            "Audi virtual cockpit": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Display & Brightness"
+                                ]
+                            },
+                            "Head-up display": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Display & Brightness"
+                                ]
+                            },
+                            "MMI display": {
+                                "child": {
+                                    "Screen cleaning": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "SETTINGS",
+                                            "Display & Brightness",
+                                            "MMI display"
+                                        ]
+                                    },
+                                    "Screensaver": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "SETTINGS",
+                                            "Display & Brightness",
+                                            "MMI display"
+                                        ]
+                                    },
+                                    "Touchscreen feedback": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "SETTINGS",
+                                            "Display & Brightness",
+                                            "MMI display"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Display & Brightness"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Entertainment": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "GEM": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "General": {
+                        "child": {
+                            "Abnormal alarms": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "General"
+                                ]
+                            },
+                            "Date & time": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "General"
+                                ]
+                            },
+                            "Legal notes": {
+                                "child": {
+                                    "About Audi connect app": {
+                                        "child": {
+                                            "Apps": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "SETTINGS",
+                                                    "General",
+                                                    "Legal notes",
+                                                    "About Audi connect app"
+                                                ]
+                                            },
+                                            "Assistant & voice": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "SETTINGS",
+                                                    "General",
+                                                    "Legal notes",
+                                                    "About Audi connect app"
+                                                ]
+                                            },
+                                            "Location": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "SETTINGS",
+                                                    "General",
+                                                    "Legal notes",
+                                                    "About Audi connect app"
+                                                ]
+                                            },
+                                            "Notifications": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "SETTINGS",
+                                                    "General",
+                                                    "Legal notes",
+                                                    "About Audi connect app"
+                                                ]
+                                            },
+                                            "Profiles & accounts": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "SETTINGS",
+                                                    "General",
+                                                    "Legal notes",
+                                                    "About Audi connect app"
+                                                ]
+                                            },
+                                            "Sound": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "SETTINGS",
+                                                    "General",
+                                                    "Legal notes",
+                                                    "About Audi connect app"
+                                                ]
+                                            },
+                                            "System": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "SETTINGS",
+                                                    "General",
+                                                    "Legal notes",
+                                                    "About Audi connect app"
+                                                ]
+                                            }
+                                        },
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "SETTINGS",
+                                            "General",
+                                            "Legal notes"
+                                        ]
+                                    },
+                                    "Software information": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "SETTINGS",
+                                            "General",
+                                            "Legal notes"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "General"
+                                ]
+                            },
+                            "Measurement units": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "General"
+                                ]
+                            },
+                            "Reminder signal and mobile device charging": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "General"
+                                ]
+                            },
+                            "Speech dialog system": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "General"
+                                ]
+                            },
+                            "Version information": {
+                                "child": {
+                                    "Navigation database information": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "SETTINGS",
+                                            "General",
+                                            "Version information"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "General"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Language": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Messages": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Navigation": {
+                        "child": {
+                            "Map settings": {
+                                "child": {
+                                    "Map content": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "SETTINGS",
+                                            "Navigation",
+                                            "Map settings"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Navigation"
+                                ]
+                            },
+                            "Presentation mode": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Navigation"
+                                ]
+                            },
+                            "Route criteria": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Navigation"
+                                ]
+                            },
+                            "Route information": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Navigation"
+                                ]
+                            },
+                            "Voice guidance": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Navigation"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Notifications": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Positioning": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Privacy": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "REM": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Sound": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "System maintenance": {
+                        "child": {
+                            "Factory reset": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "System maintenance"
+                                ]
+                            },
+                            "Software update": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "System maintenance"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    },
+                    "Telephone": {
+                        "child": {
+                            "Data module serial number(IMEI)": {
+                                "child": {},
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "SETTINGS",
+                                    "Telephone"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "SETTINGS"
+                        ]
+                    }
+                },
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            },
+            "Users": {
+                "child": {
+                    "Add user": {
+                        "child": {
+                            "Initiate setup": {
+                                "child": {
+                                    "Local user": {
+                                        "child": {
+                                            "Cancel": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "Users",
+                                                    "Add user",
+                                                    "Initiate setup",
+                                                    "Local user"
+                                                ]
+                                            },
+                                            "Continue": {
+                                                "child": {},
+                                                "direction": "horizontal",
+                                                "level": 5,
+                                                "parent": [
+                                                    "Users",
+                                                    "Add user",
+                                                    "Initiate setup",
+                                                    "Local user"
+                                                ]
+                                            }
+                                        },
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "Users",
+                                            "Add user",
+                                            "Initiate setup"
+                                        ]
+                                    },
+                                    "myAudi user": {
+                                        "child": {},
+                                        "direction": "horizontal",
+                                        "level": 4,
+                                        "parent": [
+                                            "Users",
+                                            "Add user",
+                                            "Initiate setup"
+                                        ]
+                                    }
+                                },
+                                "direction": "horizontal",
+                                "level": 3,
+                                "parent": [
+                                    "Users",
+                                    "Add user"
+                                ]
+                            }
+                        },
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "Users"
+                        ]
+                    }
+                },
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            },
+            "VEHICLE": {
+                "child": {
+                    "Audi drive select": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "VEHICLE"
+                        ]
+                    },
+                    "Driver assistance": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "VEHICLE"
+                        ]
+                    },
+                    "Efficiency assist": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "VEHICLE"
+                        ]
+                    },
+                    "Favorites": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "VEHICLE"
+                        ]
+                    },
+                    "Light &Visibility": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "VEHICLE"
+                        ]
+                    },
+                    "Parking aid": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "VEHICLE"
+                        ]
+                    },
+                    "Seats": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "VEHICLE"
+                        ]
+                    },
+                    "Settings &Service": {
+                        "child": {},
+                        "direction": "horizontal",
+                        "level": 2,
+                        "parent": [
+                            "VEHICLE"
+                        ]
+                    }
+                },
+                "direction": "horizontal",
+                "level": 1,
+                "parent": []
+            }
+        }
+    }
+}
